@@ -1,0 +1,9 @@
+.venv/
+cache/
+data/*.parquet
+results/answer_reproduced.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+results/answer_reproduced.meta.json
+results/*/per_event.npz
