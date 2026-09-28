@@ -119,7 +119,7 @@ class BM25FIndex:
 
 
 def single_field_index(docs: list[str], k1: float = 1.2, b: float = 0.75) -> BM25FIndex:
-    """Классический BM25 по одному слитному полю — воспроизведение baseline из ТЗ §2."""
+    """Классический BM25 по одному слитному полю — точка отсчёта, см. scripts/eval_bm25_baseline.py."""
     return BM25FIndex([Field("all", weight=1.0, b=b)], k1=k1).fit({"all": docs})
 
 
